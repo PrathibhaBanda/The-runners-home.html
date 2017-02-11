@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Operators </title>
+    <h1> Operations
+    </h1>
+    <style>
+ form {
+
+
+        margin-right: 1200px;
+        margin-left: 50px;
+     background-color: lightblue;
+
+
+     }
+    </style>
+</head>
+<body>
+<script>
+    function additionBy()
+    {
+        num1 = document.getElementById("first").value;
+        num2 = document.getElementById("second").value;
+        document.getElementById("result").innerHTML = Number(num1) + Number(num2);
+    }
+
+    function subtractionBy()
+    {
+        num1 = document.getElementById("first").value;
+        num2 = document.getElementById("second").value;
+        document.getElementById("result").innerHTML = Number(num1) - Number(num2);
+    }
+    function multiplyBy()
+    {
+        num1 = document.getElementById("first").value;
+        num2 = document.getElementById("second").value;
+        document.getElementById("result").innerHTML = Number(num1) * Number(num2);
+    }
+    function divideBy()
+    {
+        num1 = document.getElementById("first").value;
+        num2 = document.getElementById("second").value;
+        document.getElementById("result").innerHTML = Number(num1) / Number(num2);
+    }
+</script>
+<form>
+    Enter No 1: <input type ="text" id="first" /> <br> <br>
+    Enter No 2: <input type ="text" id="second" /> <br> <br>
+    <input type="button" onclick="additionBy()" value="Addition" />
+    <input type="button" onclick="subtractionBy()" value="Subtraction"  />
+    <input type="button" onclick="multiplyBy()" value="Multiplication" />
+    <input type="button" onclick="divideBy()" value="Division" />
+</form>
+<p>  <b>Result</b>:
+    <span id ="result"  style="color:Red ;font-weight:bold"> </span> </p>
+
+</body>
+</html>
